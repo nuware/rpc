@@ -8,8 +8,7 @@
   "browser": "dist/rpc.umd.js",
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "example:server": "node example/server.js"
+    "dev": "rollup -c -w"
   },
   "files": [
     "dist"
