@@ -2,9 +2,11 @@ import { createCaller } from './caller.js'
 
 import { createCallee } from './callee.js'
 
+import { CallerErrorType, CalleeErrorType, MethodErrorType } from './common.js'
+
 export const VERSION = '[VI]{version}[/VI]'
 
-export { createCaller, createCallee }
+export { createCaller, createCallee, CallerErrorType, CalleeErrorType, MethodErrorType }
 
 export const createRPC = ({ callee, caller }) => {
   const define = callee.define
