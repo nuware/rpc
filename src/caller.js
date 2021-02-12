@@ -1,6 +1,6 @@
 import { nextId, isResponse, CallerErrorType } from './common.js'
 
-export const createCaller = ({ send, createId = nextId }) => {
+export const createCaller = ({ send, createId = nextId } = {}) => {
   if (typeof send !== 'function') {
     throw new Error(`Property "send" required and should be a function`)
   }
